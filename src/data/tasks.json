@@ -1,0 +1,53 @@
+[
+  {
+    "jobId": "JobA",
+    "tasks": [
+      {
+        "taskId": "TaskA-1",
+        "taskName": "Print"
+      },
+      {
+        "taskId": "TaskA-2",
+        "taskName": "Laminate"
+      },
+      {
+        "taskId": "TaskA-3",
+        "taskName": "Trim"
+      }
+    ]
+  },
+  {
+    "jobId": "JobB",
+    "tasks": [
+      {
+        "taskId": "TaskB-1",
+        "taskName": "Print"
+      },
+      {
+        "taskId": "TaskB-2",
+        "taskName": "Laminate"
+      },
+      {
+        "taskId": "TaskB-3",
+        "taskName": "Trim"
+      }
+    ]
+  },
+  {
+    "jobId": "JobC",
+    "tasks": [
+      {
+        "taskId": "TaskC-1",
+        "taskName": "Print"
+      },
+      {
+        "taskId": "TaskC-2",
+        "taskName": "Laminate"
+      },
+      {
+        "taskId": "TaskC-3",
+        "taskName": "Trim"
+      }
+    ]
+  }
+]

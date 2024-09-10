@@ -19,7 +19,6 @@ describe('App', () => {
     await router.isReady()
 
     const element = document.querySelector('#home-view-title')
-    console.log(element)
     expect(element).toBeTruthy()
     expect(element?.innerHTML).toEqual('Home view')
   })
