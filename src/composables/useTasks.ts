@@ -1,6 +1,6 @@
 import { useFetch } from '@vueuse/core'
 
-const { isFetching, error, data, execute } = useFetch('/src/data/tasks.json', {
+const { isFetching, error, data, execute } = useFetch('/data/tasks.json', {
   immediate: false
 })
 

@@ -2,7 +2,7 @@ import '@/mocks/node'
 
 import { describe, expect, it } from 'vitest'
 
-import tasks from '@/data/tasks.json'
+import tasks from '../../public/data/tasks.json'
 import useTasks from '@/composables/useTasks'
 import { waitFor } from '@testing-library/vue'
 
