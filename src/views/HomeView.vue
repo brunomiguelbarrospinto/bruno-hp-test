@@ -1,13 +1,16 @@
 <template>
   <div>
     <div id="home-view-title">Home view</div>
-    {{ isFetching }}
-    {{ data }}
+    <div>{{ jobsStore.isFetching }}</div>
+
+    <div :key="job.jobId" v-for="job in jobsStore.getJobs">
+      {{ job.jobId }}
+    </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import useTasks from '@/composables/useTasks'
-const { execute, data, isFetching } = useTasks()
-execute()
+import { useJobsStore } from '@/stores/jobs'
+const jobsStore = useJobsStore()
+jobsStore.fetchJobs()
 </script>

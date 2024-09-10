@@ -1,9 +1,9 @@
 import { HttpResponse, http } from 'msw'
 
-import tasks from '../../public/data/tasks.json'
+import jobs from '../../public/data/jobs.json'
 
 export const handlers = [
-  http.get('/data/tasks.json', () => {
-    return HttpResponse.json(tasks)
+  http.get('/data/jobs.json', () => {
+    return HttpResponse.json(jobs)
   })
 ]
