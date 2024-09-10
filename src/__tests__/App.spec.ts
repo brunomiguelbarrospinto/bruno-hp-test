@@ -46,12 +46,18 @@ describe('App', () => {
   })
 
   it('renders another view', async () => {
-    const { findByText } = await render(App, {
+    const { findByText, getByText } = await render(App, {
       global: {
         plugins: [router]
       }
     })
     router.push({ name: 'another' })
     expect(await findByText('Another view')).toBeDefined()
+    expect(await findByText('Count: 0')).toBeDefined()
+    expect(await findByText('Double count: 0')).toBeDefined()
+    const button = await getByText('Increment')
+    button.click()
+    expect(await findByText('Count: 1')).toBeDefined()
+    expect(await findByText('Double count: 2')).toBeDefined()
   })
 })
