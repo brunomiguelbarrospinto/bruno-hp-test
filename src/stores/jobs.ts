@@ -1,7 +1,6 @@
 import { JobModel, type JobDTO } from '@/models/JobModel'
 import { defineStore } from 'pinia'
 import useJobs from '@/composables/useJobs'
-import { ref } from 'vue'
 const { execute, data, isFetching } = useJobs()
 
 interface JobsState {
@@ -28,14 +27,12 @@ export const useJobsStore = defineStore('jobs', {
     machines: ['Print', 'Laminate', 'Trim']
   }),
   getters: {
-    getJobs: (state) => state.jobs,
     getJob: (state) => {
       return (jobId: string) => {
         return state.jobs?.find((j) => j.jobId === jobId)
       }
     },
     getHours: (state) => state.hours,
-    getMachines: (state) => state.machines,
     getJobsByMachineAndHours: (state) => {
       const result: any = {}
       const hours: any = {}

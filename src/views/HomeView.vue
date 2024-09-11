@@ -34,7 +34,10 @@
     </div>
     <JobDetails v-if="selectedJob" :job="selectedJob" />
     <hr class="my-3" />
-    <pre>{{ jobsStore.getJobsByMachineAndHours }}</pre>
+    <details>
+      <summary>Just for dev purposes</summary>
+      <pre>{{ jobsStore.getJobsByMachineAndHours }}</pre>
+    </details>
   </div>
 </template>
 
