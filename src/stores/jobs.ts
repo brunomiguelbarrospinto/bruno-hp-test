@@ -29,6 +29,11 @@ export const useJobsStore = defineStore('jobs', {
   }),
   getters: {
     getJobs: (state) => state.jobs,
+    getJob: (state) => {
+      return (jobId: string) => {
+        return state.jobs?.find((j) => j.jobId === jobId)
+      }
+    },
     getHours: (state) => state.hours,
     getMachines: (state) => state.machines,
     getJobsByMachineAndHours: (state) => {

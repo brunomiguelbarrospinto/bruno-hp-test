@@ -38,14 +38,41 @@
     "tasks": [
       {
         "taskId": "TaskC-1",
+        "taskName": "Laminate"
+      }
+    ]
+  },
+  {
+    "jobId": "JobD",
+    "tasks": [
+      {
+        "taskId": "TaskD-1",
         "taskName": "Print"
       },
       {
-        "taskId": "TaskC-2",
+        "taskId": "TaskD-2",
         "taskName": "Laminate"
       },
       {
-        "taskId": "TaskC-3",
+        "taskId": "TaskD-3",
+        "taskName": "Trim"
+      }
+    ]
+  },
+  {
+    "jobId": "JobE",
+    "tasks": [
+      {
+        "taskId": "TaskE-1",
+        "taskName": "Trim"
+      }
+    ]
+  },
+  {
+    "jobId": "JobF",
+    "tasks": [
+      {
+        "taskId": "TaskF-1",
         "taskName": "Trim"
       }
     ]

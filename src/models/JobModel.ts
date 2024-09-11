@@ -23,7 +23,7 @@ export class JobModel {
   readonly tasks
   readonly color
   readonly hasToBePrint
-  private hasToBeLaminate
+  readonly hasToBeLaminate
   public printPosition: number
   public laminatePosition: number
 

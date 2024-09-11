@@ -7,7 +7,6 @@
         <RouterLink class="ml-3" to="/another">Another</RouterLink>
       </header>
       <hr class="my-3" />
-
       <router-view v-slot="{ Component }">
         <transition name="fade" mode="out-in">
           <component :is="Component" />
