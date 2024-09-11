@@ -12,6 +12,18 @@
           <component :is="Component" />
         </transition>
       </router-view>
+      <footer class="mt-16 md:mt-32 flex-none mx-auto w-full">
+        <div class="flex flex-col items-center justify-between">
+          <p class="text-sm text-zinc-400 dark:text-zinc-500">
+            Created By:
+            <a
+              class="font-bold underline decoration-wavy decoration-cyan-400"
+              href="https://brunomiguelbarrospinto.dev"
+              >Bruno Miguel Barros Pinto.</a
+            >
+          </p>
+        </div>
+      </footer>
     </div>
   </div>
 </template>

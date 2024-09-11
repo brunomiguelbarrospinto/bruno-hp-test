@@ -1,18 +1,10 @@
-# hp-test
+# Bruno hp test
 
-This template should help get you started developing with Vue 3 in Vite.
+## Can see the demo here https://bruno-hp-test.web.app/
 
-## Recommended IDE Setup
+## Requirements to show in local
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+1. Node v20 / NPM v10
 
 ## Project Setup
 
@@ -32,14 +24,14 @@ npm run dev
 npm run build
 ```
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+### Run Tests with [Vitest](https://vitest.dev/)
 
 ```sh
-npm run test:unit
+npm run test
 ```
 
-### Lint with [ESLint](https://eslint.org/)
+### Run Tests Coverage, a folder will be created called 'coverage' at the root project (100% coverage generated)
 
 ```sh
-npm run lint
+npm run coverage
 ```
